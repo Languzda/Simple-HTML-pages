@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 */
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+}
+
+main {
+  width: 40rem;
+  margin: 5rem auto;
+  border-radius: 2rem;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background-color: hsl(225, 100%, 98%);
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 2.6rem;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+}
+
+.pic {
+  width: 100%;
+}
+
+.hero-pic {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+  letter-spacing: -0.2px;
+}
+
+.plan-cost {
+  color: hsl(224, 23%, 55%);
+}
+
+.Annual-box {
+  padding: 2rem;
+  background-color: hsl(225, 100%, 90%);
+  border-radius: 1rem;
+
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr 1fr;
+}
+
+.cost {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  justify-content: space-around;
+  align-content: center;
+}
+
+.Annual-box-right {
+  font-weight: 700;
+  display: flex;
+  align-self: center;
+  justify-content: end;
+}
+
+.change-plan-link:link,
+.change-plan-link:visited {
+  transition: all 0.25s;
+}
+
+.change-plan-link:hover,
+.change-plan-link:active {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+.btn {
+  transition: all 0.25s;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.btn-procced {
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 1.5rem 1.5rem;
+}
+
+.btn-procced:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.btn-can {
+  color: hsl(224, 23%, 55%);
+  background-color: hsl(225, 100%, 98%);
+}
+
+.btn-can:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+
+  .Annual-box {
+    grid-template-columns: 0.4fr 0.8fr 0.8fr;
+  }
+}
